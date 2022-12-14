@@ -1,8 +1,14 @@
 import React from 'react';
-
+import { toast } from 'react-hot-toast';
+import { MdSend } from 'react-icons/md'
 const Contact = () => {
+
+    const handleSendEmail = () => {
+        toast.success('Email Has been Send')
+    }
+
     return (
-        <div>
+        <section className='py-3' id='Contact'>
             <h3 className="text-center text-white text-3xl text-bold mt-5 mb-5">Contact</h3>
             <section className="py-6 dark:bg-gray-800 text-white">
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
@@ -34,21 +40,21 @@ const Contact = () => {
                     <form novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
                         <label className="block">
                             <span className="mb-1">Full name</span>
-                            <input type="text" placeholder="Leroy Jenkins" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75  py-2 px-2" />
+                            <input type="text" placeholder="Leroy Jenkins" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black  py-2 px-2" />
                         </label>
                         <label className="block">
                             <span className="mb-1">Email address</span>
-                            <input type="email" placeholder="leroy@jenkins.com" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-violet-400 py-2 px-2" />
+                            <input type="email" placeholder="leroy@jenkins.com" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black py-2 px-2" />
                         </label>
                         <label className="block">
                             <span className="mb-1">Message</span>
                             <textarea rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75  "></textarea>
                         </label>
-                        <button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-400 dark:text-gray-900 bg-[#37715D] hover:bg-[#187051] ">Submit</button>
+                        <button onClick={handleSendEmail} type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75  bg-[#37715D] hover:bg-[#187051] ">Send Email <MdSend></MdSend></button>
                     </form>
                 </div>
             </section>
-        </div>
+        </section>
     );
 };
 
