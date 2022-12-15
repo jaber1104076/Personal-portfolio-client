@@ -4,12 +4,12 @@ import './Skills.css'
 import skill from '../../assets/images/skills.png'
 const Skills = () => {
     return (
-        <section className="skills section mt-[200px]" id="skills">
+        <section className="skills section mt-[100px]" id="skills">
             <h2 className="text-3xl divider mx-96 text-center font-bold text-[#4070F4]">Skills</h2>
 
             <div className="flex flex-col justify-between max-w-xl px-4 mx-auto lg:pt-16 lg:flex-row md:px-8 lg:max-w-screen-xl sm:pt-5">
                 <div>
-                    <h2 className="text-xl mb-5 text-center font-medium">Profesional Skills</h2>
+                    <h2 className="text-xl mb-5 text-center font-medium">Professional Skills</h2>
                     <p className="skills__text mb-5">Every industry ‒ and even every job ‒ calls for a unique set of skills. Here is a breakdown of some of the hard and soft skills that are important in popular industries.</p>
                     <div className="skills__data mb-6">
                         <div className="skills__names">

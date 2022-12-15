@@ -1,7 +1,7 @@
 import React from 'react';
-import facebook from '../../assets/svg/facebook.svg'
-import github from '../../assets/svg/github.svg'
-import linkdin from '../../assets/svg/linkedin.svg'
+import facebook from '../../assets/svg/facebook.png'
+import github from '../../assets/svg/github.png'
+import linkdin from '../../assets/svg/linkedin.png'
 import './SocialShare.css'
 
 const SocialShare = () => {

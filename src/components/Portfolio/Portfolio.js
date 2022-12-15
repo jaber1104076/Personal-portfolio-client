@@ -36,7 +36,7 @@ const Portfolio = () => {
     ]
     return (
         <div id='portfolio'>
-            <h3 className="text-center divider mx-96  text-3xl font-bold mb-5 mt-[200px] text-[#4070F4]">Portfolio</h3>
+            <h3 className="text-center divider mx-96  text-3xl font-bold mb-5 mt-[150px] text-[#4070F4]">Portfolio</h3>
             <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 mx-20'>
                 {
                     projectsData.map(data => <Card
