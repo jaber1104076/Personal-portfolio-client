@@ -15,12 +15,9 @@ const Header = () => {
                     aria-label="Company"
                     class="inline-flex items-center"
                 >
-                    <div className='flex flex-col'>
-                        <span class="ml-2 text-xl font-bold tracking-wide text-[#01fe87] uppercase">
-                            Abdullah Al Jaber
-                        </span>
-                        <span class="ml-2 text-sm font-lg tracking-wide text-white uppercase">Front-End Develper</span>
-                    </div>
+                    <span class="ml-2 text-xl font-bold tracking-wide text-[#3C4043] uppercase">
+                        Abdullah Al Jaber
+                    </span>
                 </a>
                 <ul class="flex items-center hidden space-x-8 lg:flex">
                     <li>
@@ -28,7 +25,7 @@ const Header = () => {
                             href="/"
                             aria-label="home"
                             title="Home"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                             Home
                         </a>
@@ -38,19 +35,19 @@ const Header = () => {
                             href="#skills"
                             aria-label="skills"
                             title="skills"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                             Skills
                         </a>
                     </li>
                     <li>
                         <a
-                            href="/"
+                            href="#portfolio"
                             aria-label="Projects"
                             title="Projects"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                            Projects
+                            Portfolio
                         </a>
                     </li>
                     <li>
@@ -58,7 +55,7 @@ const Header = () => {
                             href="#Contact"
                             aria-label="Contact"
                             title="Contack"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                             Contack
                         </a>
@@ -68,9 +65,9 @@ const Header = () => {
                             href="/"
                             aria-label="portfolio"
                             title="About us"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                            Portfolio
+                            About Me
                         </a>
                     </li>
                 </ul>
@@ -78,7 +75,7 @@ const Header = () => {
                     <li>
                         <a
                             href="https://drive.google.com/file/d/1R5VoQzopOYR_S57c7TEAE2bkvQ_jb9hm/view?usp=sharing"
-                            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#37715D] hover:bg-[#187051]  focus:shadow-outline focus:outline-none"
+                            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide rounded  hover:text-gray-100 bg-gradient-to-r from-[#4070F4] to-[#2A42DD] text-white"
                             aria-label="download"
                             title="DownLoad Cv"
                             onClick={handleDownload}

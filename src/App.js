@@ -5,10 +5,11 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Skills from './components/Skills/Skills';
 import picture from './assets/images/contack.jpg'
-import picture2 from './assets/images/cover.jpg'
+import picture2 from './assets/images/bg-skill.jpg'
 import picture3 from './assets/images/19366.jpg'
 import SocialShare from './components/SocialShare/SocialShare';
 import Portfolio from './components/Portfolio/Portfolio';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         backgroundImage: `url(${picture})`
       }}>
         <Contact></Contact>
+        <Footer></Footer>
       </div>
       <Toaster></Toaster>
     </div>

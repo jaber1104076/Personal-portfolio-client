@@ -4,8 +4,8 @@ import './Skills.css'
 import skill from '../../assets/images/skills.png'
 const Skills = () => {
     return (
-        <section className="skills section" id="skills">
-            <h2 className="text-3xl text-center font-bold text-[#4070F4]">Skills</h2>
+        <section className="skills section mt-[200px]" id="skills">
+            <h2 className="text-3xl divider mx-96 text-center font-bold text-[#4070F4]">Skills</h2>
 
             <div className="flex flex-col justify-between max-w-xl px-4 mx-auto lg:pt-16 lg:flex-row md:px-8 lg:max-w-screen-xl sm:pt-5">
                 <div>

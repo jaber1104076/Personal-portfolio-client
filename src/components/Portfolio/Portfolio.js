@@ -11,6 +11,7 @@ const Portfolio = () => {
             image: "https://i.ibb.co/ScBXzPR/Educare-Solution.png",
             live_site: "https://educare-build-future.web.app/",
             code_link: "https://github.com/jaber1104076/Educare-Solution-Client",
+            server_side: "https://github.com/jaber1104076/Educare-Solution-Server"
         },
         {
             id: 2,
@@ -20,6 +21,7 @@ const Portfolio = () => {
             image: "https://i.ibb.co/xhb5Kk5/GoFood.png",
             live_site: "https://go-food-c107c.web.app/home",
             code_link: "https://github.com/jaber1104076/Go-food-client",
+            server_side: "https://github.com/jaber1104076/Go-food-Server"
         },
         {
             id: 3,
@@ -29,11 +31,12 @@ const Portfolio = () => {
             image: "https://i.ibb.co/m66nRNy/The-Resal-Emporium.png",
             live_site: "https://the-resale-emporium.web.app/",
             code_link: "https://github.com/jaber1104076/The-Resale-Emporium-client",
+            server_side: "https://github.com/jaber1104076/The-resale-Emporium-server"
         },
     ]
     return (
-        <div>
-            <h3 className="text-center text-3xl font-bold mb-5 mt-5">Portfolio</h3>
+        <div id='portfolio'>
+            <h3 className="text-center divider mx-96  text-3xl font-bold mb-5 mt-[200px] text-[#4070F4]">Portfolio</h3>
             <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 mx-20'>
                 {
                     projectsData.map(data => <Card

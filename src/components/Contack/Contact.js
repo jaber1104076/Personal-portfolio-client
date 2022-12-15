@@ -50,7 +50,7 @@ const Contact = () => {
                             <span className="mb-1">Message</span>
                             <textarea rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75  "></textarea>
                         </label>
-                        <button onClick={handleSendEmail} type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75  bg-[#37715D] hover:bg-[#187051] ">Send Email <MdSend></MdSend></button>
+                        <button onClick={handleSendEmail} type="button" className="w-full self-center px-5 py-3 text-lg rounded    hover:text-gray-100 bg-gradient-to-r from-[#4070F4] to-[#2A42DD] text-white">Send Email</button>
                     </form>
                 </div>
             </section>
