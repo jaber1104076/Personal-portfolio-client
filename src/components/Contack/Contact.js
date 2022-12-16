@@ -40,17 +40,17 @@ const Contact = () => {
                     <form novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
                         <label className="block">
                             <span className="mb-1">Full name</span>
-                            <input type="text" placeholder="Leroy Jenkins" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black  py-2 px-2" />
+                            <input type="text" placeholder="Enter Name" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black  py-2 px-2" />
                         </label>
                         <label className="block">
                             <span className="mb-1">Email address</span>
-                            <input type="email" placeholder="leroy@jenkins.com" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black py-2 px-2" />
+                            <input type="email" placeholder="Enter Email" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black py-2 px-2" />
                         </label>
                         <label className="block">
                             <span className="mb-1">Message</span>
-                            <textarea rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75  "></textarea>
+                            <textarea rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 px-2" placeholder='Type Your Message'></textarea>
                         </label>
-                        <button onClick={handleSendEmail} type="button" className="w-full self-center px-5 py-3 text-lg rounded    hover:text-gray-100 bg-gradient-to-r from-[#4070F4] to-[#2A42DD] text-white">Send Email</button>
+                        <button onClick={handleSendEmail} type="button" className="flex justify-center items-center w-full self-center px-5 py-3 text-lg rounded  hover:text-gray-100 bg-gradient-to-r from-[#4070F4] to-[#2A42DD] text-white">Send Email <MdSend className='ml-2'></MdSend></button>
                     </form>
                 </div>
             </section>

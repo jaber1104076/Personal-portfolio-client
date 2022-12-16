@@ -15,7 +15,7 @@ const Header = () => {
                     aria-label="Company"
                     className="inline-flex items-center"
                 >
-                    <span className="ml-2 text-xl font-bold tracking-wide text-[#3C4043] uppercase">
+                    <span className="ml-2 text-2xl font-bold tracking-wide text-[#3C4043] uppercase">
                         Abdullah Al Jaber
                     </span>
                 </a>
@@ -25,7 +25,7 @@ const Header = () => {
                             href="/"
                             aria-label="home"
                             title="Home"
-                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200"
                         >
                             Home
                         </a>
@@ -35,7 +35,7 @@ const Header = () => {
                             href="#skills"
                             aria-label="skills"
                             title="skills"
-                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200"
                         >
                             Skills
                         </a>
@@ -45,7 +45,7 @@ const Header = () => {
                             href="#portfolio"
                             aria-label="Projects"
                             title="Projects"
-                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200"
                         >
                             Portfolio
                         </a>
@@ -55,7 +55,7 @@ const Header = () => {
                             href="#Contact"
                             aria-label="Contact"
                             title="Contact"
-                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200"
                         >
                             Contact
                         </a>
@@ -65,7 +65,7 @@ const Header = () => {
                             href="/"
                             aria-label="portfolio"
                             title="About Me"
-                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className="font-medium tracking-wide text-black hover:text-[#2A42DD] transition-colors duration-200"
                         >
                             About Me
                         </a>
@@ -88,7 +88,7 @@ const Header = () => {
                     <button
                         aria-label="Open Menu"
                         title="Open Menu"
-                        className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
+                        className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
                         onClick={() => setIsMenuOpen(true)}
                     >
                         <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
