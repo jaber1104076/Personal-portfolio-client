@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
 import { MdSend } from 'react-icons/md'
 const Contact = () => {
 
-    const handleSendEmail = () => {
-        toast.success('Email Has been Send')
-    }
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        e.form.reset()
+        emailjs.sendForm(
+            'service_mc1s6zf',
+            'template_6cftari',
+            form.current,
+            'Fxg1FlbbkOjTgqblP')
+            .then((result) => {
+                console.log(result.text);
+                toast.success('Thank you for sending me Mail')
+
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <section className='py-3' id='Contact'>
@@ -26,7 +42,7 @@ const Contact = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
                                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                                 </svg>
-                                <span>(+88)01685254687</span>
+                                <span>(+88) 01685254687</span>
                             </p>
                             <p className="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
@@ -37,20 +53,20 @@ const Contact = () => {
                             </p>
                         </div>
                     </div>
-                    <form novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+                    <form ref={form} onSubmit={sendEmail} className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
                         <label className="block">
                             <span className="mb-1">Full name</span>
-                            <input type="text" placeholder="Enter Name" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black  py-2 px-2" />
+                            <input type="text" name="User_name" placeholder="Enter Name" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black  py-2 px-2" required />
                         </label>
                         <label className="block">
                             <span className="mb-1">Email address</span>
-                            <input type="email" placeholder="Enter Email" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black py-2 px-2" />
+                            <input type="email" name="User.email" placeholder="Enter Email" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 text-black py-2 px-2" required />
                         </label>
                         <label className="block">
                             <span className="mb-1">Message</span>
-                            <textarea rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 px-2" placeholder='Type Your Message'></textarea>
+                            <textarea name='message' rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 px-2 text-black" placeholder='Type Your Message' required></textarea>
                         </label>
-                        <button onClick={handleSendEmail} type="button" className="flex justify-center items-center w-full self-center px-5 py-3 text-lg rounded  hover:text-gray-100 bg-gradient-to-r from-[#4070F4] to-[#2A42DD] text-white">Send Email <MdSend className='ml-2'></MdSend></button>
+                        <button type="button" className="flex justify-center items-center w-full self-center px-5 py-3 text-lg rounded  hover:text-gray-100 bg-gradient-to-r from-[#4070F4] to-[#2A42DD] text-white">Send Email <MdSend className='ml-2'></MdSend></button>
                     </form>
                 </div>
             </section>

@@ -74,13 +74,13 @@ const Header = () => {
                 <ul className="flex items-center hidden space-x-8 lg:flex">
                     <li>
                         <a
-                            href="https://drive.google.com/file/d/1R5VoQzopOYR_S57c7TEAE2bkvQ_jb9hm/view?usp=sharing"
+                            href="https://drive.google.com/drive/folders/1Oy87nzSwKhBTgmIrpkgbdkaX52FR8HCF"
                             className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide rounded  hover:text-gray-100 bg-gradient-to-r from-[#4070F4] to-[#2A42DD] text-white"
                             aria-label="download"
                             title="DownLoad Cv"
                             onClick={handleDownload}
                         >
-                            Download Cv <HiDownload className='ml-2'></HiDownload>
+                            Download CV <HiDownload className='ml-2'></HiDownload>
                         </a>
                     </li>
                 </ul>
